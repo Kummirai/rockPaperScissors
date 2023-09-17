@@ -166,6 +166,7 @@ Button{
 }
 #reset{
   width: 30%;
+  margin-bottom: 30px;
 }
 
 #computerStats, #myStats {
