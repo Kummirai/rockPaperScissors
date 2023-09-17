@@ -66,11 +66,8 @@ margin-bottom: 10px;
   align-items: center;
   width: 100%;
 }
-#result{
-/*  background-color: darkgreen;*/
-}
-#myScore{
- /* background-color: orange;*/
+#reset{
+ width: 15%;
 }
 Button{
   width: 30%;
@@ -84,9 +81,8 @@ Button{
   font-size: 22px;
   color: #101820;
 }
-#result{
-  
-}
+#
+
 #computerStats, #myStats {
   font-size: 48px;
 }
@@ -112,6 +108,7 @@ Button{
   font-size: 20px;
   margin-bottom: 30px;
   }
+  
 @media(max-width: 768px){
 
 .heading{
@@ -151,12 +148,7 @@ margin-bottom: 10px;
   align-items: center;
   width: 100%;
 }
-#result{
-/*  background-color: darkgreen;*/
-}
-#myScore{
- /* background-color: orange;*/
-}
+
 Button{
   width: 30%;
   font-size: 18px;
@@ -169,9 +161,10 @@ Button{
   font-size: 22px;
   color: #101820;
 }
-#result{
-  
+#reset{
+  width: 30%;
 }
+
 #computerStats, #myStats {
   font-size: 48px;
 }
