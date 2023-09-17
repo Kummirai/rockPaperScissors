@@ -12,7 +12,6 @@ font-family: 'Yeseva One', cursive;
   box-sizing: border-box;
   /*font-family: 'Ubuntu', sans-serif;*/
   font-family: 'Nunito', sans-serif;
-  
 }
 .container{
   display: flex;
@@ -110,6 +109,10 @@ Button{
   }
   
 @media(max-width: 768px){
+
+.container{
+  height: 798px;
+}
 
 .heading{
   display: flex;
