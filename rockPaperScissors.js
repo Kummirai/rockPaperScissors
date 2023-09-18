@@ -23,10 +23,13 @@ function  rockPaperScissors() {
 function numberOfClicks() {
  count ++;
  document.getElementById('clicks').innerHTML= count;
-/* if (count === 10){
-   document.getElementById('whoWon').innerHTML = 'Congratulations You Won !'
- }*/
-}
+ let yourPoints = document.getElementById('myStats').textContent;
+ let computerPoints = document.getElementById('computerStats').textContent;
+ if(count === 10 && yourPoints > computerPoints){
+   document.getElementById("whoWon").innerHTML = alert('Congratulations You Won !');
+   resetCount();
+   }
+ }
 //numberOfClicks();
 
 function resetCount(){
