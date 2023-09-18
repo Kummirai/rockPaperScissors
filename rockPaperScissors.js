@@ -17,20 +17,28 @@ function  rockPaperScissors() {
   document.getElementById("result").innerHTML = "Computer picked Scissors !";
   }
 }
-//rockPaperScissors();
 
 //This function keeps track is of the numbers plays in the game 
-function numberOfClicks() {
+function numberOfClicks(){
  count ++;
  document.getElementById('clicks').innerHTML= count;
+ winner();
+ }
+
+function winner(){
  let yourPoints = document.getElementById('myStats').textContent;
  let computerPoints = document.getElementById('computerStats').textContent;
  if(count === 10 && yourPoints > computerPoints){
-   document.getElementById("whoWon").innerHTML = alert('Congratulations You Won !');
-   resetCount();
+	 document.getElementById("whoWon").innerHTML = alert('Congratulations You Won !');
+   //resetCount();
+   } else if (count === 10 && yourPoints < computerPoints){
+	   document.getElementById("whoWon").innerHTML = alert('Sorry You Lost Try Again !');
+	   //resetCount();
+   } else if (count === 10 && yourPoints === computerPoints){ 
+	   document.getElementById("whoWon").innerHTML = alert('Its A Tie !');
+	  // resetCount();
    }
- }
-//numberOfClicks();
+}
 
 function resetCount(){
   count = 0;
@@ -42,10 +50,10 @@ function resetCount(){
   document.getElementById('result').innerHTML = 'Computer choice';
   document.getElementById('whoWon').innerHTML = 'Who wins'
 }
-//resetCount();
 
 //This function is called when you click the rock button 
 function iRock() {
+ numberOfClicks();
   document.getElementById('myScore').innerHTML = 'You picked rock !';
   if (number > 0 && number <= 1/3) {
   document.getElementById('whoWon').innerHTML = 'It\'s a tie !'; 
@@ -58,10 +66,10 @@ function iRock() {
     document.getElementById('myStats').innerHTML = myPoint;
   }
 }
-//iRock();
 
  //this function is called you click the paper button 
 function iPaper() {
+ numberOfClicks();
   document.getElementById('myScore').innerHTML = 'You picked paper !'
   if (number > 0 && number <= 1/3) {
   document.getElementById('whoWon').innerHTML = 'You win !';
@@ -74,10 +82,10 @@ function iPaper() {
     computerPoint++;       document.getElementById('computerStats').innerHTML = computerPoint;  
   }
 }
-//iPaper();
 
 //this function is called when you click the scissors button 
 function iScissors() {
+ numberOfClicks();
   document.getElementById('myScore').innerHTML = 'You picked Scissors !';
   if (number > 0 && number <= 1/3) {
   document.getElementById('whoWon').innerHTML = 'You lose !';
