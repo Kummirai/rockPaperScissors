@@ -16,13 +16,14 @@ function  rockPaperScissors() {
   // Statements to be executed if condition1 and condition2 are false
   document.getElementById("result").innerHTML = "Computer picked Scissors !";
   }
+  //winner();
 }
 
 //This function keeps track is of the numbers plays in the game 
 function numberOfClicks(){
  count ++;
  document.getElementById('clicks').innerHTML= count;
- winner();
+// winner();
  }
 
 function winner(){
@@ -30,12 +31,15 @@ function winner(){
  let computerPoints = document.getElementById('computerStats').textContent;
  if(count === 10 && yourPoints > computerPoints){
 	 document.getElementById("whoWon").innerHTML = alert('Congratulations You Won !');
+	 document.getElementById("whoWon").innerHTML = 'Congratulations You Won';
    //resetCount();
    } else if (count === 10 && yourPoints < computerPoints){
 	   document.getElementById("whoWon").innerHTML = alert('Sorry You Lost Try Again !');
+	   document.getElementById("whoWon").innerHTML = ('Sorry You Lost Try Again !');
 	   //resetCount();
    } else if (count === 10 && yourPoints === computerPoints){ 
 	   document.getElementById("whoWon").innerHTML = alert('Its A Tie !');
+	   document.getElementById("whoWon").innerHTML = ('Its A Tie !');
 	  // resetCount();
    }
 }
@@ -65,6 +69,7 @@ function iRock() {
     myPoint++;  
     document.getElementById('myStats').innerHTML = myPoint;
   }
+  winner();
 }
 
  //this function is called you click the paper button 
@@ -81,6 +86,7 @@ function iPaper() {
     document.getElementById('whoWon').innerHTML = 'You lose!'; 
     computerPoint++;       document.getElementById('computerStats').innerHTML = computerPoint;  
   }
+  winner();
 }
 
 //this function is called when you click the scissors button 
@@ -97,5 +103,5 @@ function iScissors() {
   } else {
     document.getElementById('whoWon').innerHTML = 'It\'s a tie !';   
   }
+ winner();
 }
-//iScissors();
