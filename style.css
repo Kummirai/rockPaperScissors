@@ -45,6 +45,12 @@ font-family: 'Yeseva One', cursive;
   align-items: center;
   justify-content: center;
 }
+.score{
+  border: 5px solid yellow;
+  border-radius: 50px;
+  width: 80%;
+  padding: 10px;
+}
 #rules{
   padding: 10px;
   border: 1px solid yellow;
