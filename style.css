@@ -27,12 +27,28 @@ font-family: 'Yeseva One', cursive;
  background-size: cover;
  background-repeat: no-repeat;
 }
-
+.gameSets{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.scoreLine{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .heading{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+#rules{
+  padding: 10px;
+  border: 1px solid yellow;
+  border-radius: 5px;
 }
 .heading p{
   margin: 3px;
@@ -47,6 +63,7 @@ font-family: 'Yeseva One', cursive;
 p{
   font-size: 18px;
   color: white;
+  text-align: justify;
 }
 h1{
 margin-bottom: 10px;
@@ -169,8 +186,8 @@ Button{
   margin-bottom: 120px;
 }
 
-#computerStats, #myStats {
-  font-size: 48px;
+#myOverallScore, #computerOverallScore {
+  font-size: 32px;
 }
 .statistics{
   display: flex;
