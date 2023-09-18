@@ -147,6 +147,18 @@ Button{
   font-weight: 700;
   color: #FEE715;
 }
+.gameSets{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.scoreLine{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 p{
   font-size: 18px;
   color: white;
@@ -155,6 +167,11 @@ h1{
 margin-bottom: 10px;
   color: white;
   font-size: 28px;
+}
+#rules{
+  padding: 10px;
+  border: 1px solid yellow;
+  border-radius: 5px;
 }
 .my-buttons{
   display: flex;
