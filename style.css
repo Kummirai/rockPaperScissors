@@ -21,9 +21,9 @@ font-family: 'Yeseva One', cursive;
   height: 100vh;
 /* background-color: #101820;*/
 /* background-color: #011627;*/
- background-color: #051923;
+ /* background-color: #051923; */
  /*background-color: gray;*/
- /*background-image: url('images/backgroundImage.jpg');*/
+ background-image: url('images/backgroundNew.jpg');
  background-size: cover;
  background-repeat: no-repeat;
 }
