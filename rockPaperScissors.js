@@ -62,6 +62,11 @@ function resetCount(){
  computerScoreCount = 0; document.getElementById('computerOverallScore').innerHTML = computerScoreCount;*/
 }
 
+function newGame(){
+  if (document.getElementById('clicks').innerHTML == '10'){
+    console.log("l a at 10");
+  }
+}
 //This function is called when you click the rock button 
 function iRock() {
  numberOfClicks();
