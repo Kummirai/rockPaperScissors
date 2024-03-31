@@ -63,7 +63,7 @@ function resetCount(){
 }
 
 function newGame(){
-  if (document.getElementById('clicks').innerHTML == '10'){
+  if (document.getElementById('clicks').innerHTML == 10){
     console.log("l a at 10");
   }
 }
