@@ -21,7 +21,7 @@ function  rockPaperScissors() {
   //winner();
 }
 
-//This function keeps track is of the numbers plays in the game 
+//This function keeps track of the numbers plays in the game 
 function numberOfClicks(){
  count ++;
  document.getElementById('clicks').innerHTML= count;
