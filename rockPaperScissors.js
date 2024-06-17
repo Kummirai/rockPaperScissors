@@ -26,6 +26,7 @@ function numberOfClicks(){
  count ++;
  document.getElementById('clicks').innerHTML= count;
 // winner();
+newGame();
  }
 
 function winner(){
@@ -63,9 +64,16 @@ function resetCount(){
 }
 
 function newGame(){
-  if (document.getElementById('clicks').innerHTML == 10){
-    console.log("l a at 10");
+  if (count > 10){
+    console.log("I am at 10");
+    count = 0;
+    myPoint = 0;
+    computerPoint = 0;
+    document.getElementById('clicks').innerHTML = count;
+    document.getElementById('myStats').innerHTML = myPoint;
+    document.getElementById('computerStats').innerHTML = computerPoint;
   }
+
 }
 //This function is called when you click the rock button 
 function iRock() {
